@@ -149,7 +149,7 @@ circle:hover {
     opacity: 0;
 }
 
-h5 {
+.h5 {
     color: #ff6600; /* Orange color */
     font-size: 20px; /* Larger font size */
     font-family: 'Arial', sans-serif; /* Font family */
