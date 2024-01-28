@@ -20,6 +20,25 @@ d3.csv("./data/life_expectancy_per_year_waffle.csv").then(function(data) {
         }
     });
   
-    
+    let legendItem = legend.append('div').attr('class', 'legend-item');
+    legendItem.append('div')
+                .attr('class', 'legend-box')
+                .style('background-color', colors["0-50"]);
+    legendItem.append('text')
+                .text("0-50");
+
+    let legendItem1 = legend.append('div').attr('class', 'legend-item');
+    legendItem1.append('div')
+                .attr('class', 'legend-box')
+                .style('background-color', colors["51-70"]);
+    legendItem1.append('text')
+                .text("51-70");
+                
+    let legendItem2 = legend.append('div').attr('class', 'legend-item');
+    legendItem2.append('div')
+                .attr('class', 'legend-box')
+                .style('background-color', colors["71-100"]);
+    legendItem2.append('text')
+                .text("71-100");
 
 });
