@@ -19,7 +19,8 @@ d3.csv("./data/life_expectancy_per_year_waffle.csv").then(function(data) {
             document.getElementById('waffle-chart').appendChild(square);
         }
     });
-  
+    
+    const legend = d3.select('#legend');
     let legendItem = legend.append('div').attr('class', 'legend-item');
     legendItem.append('div')
                 .attr('class', 'legend-box')
