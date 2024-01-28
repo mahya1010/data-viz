@@ -149,13 +149,17 @@ circle:hover {
     opacity: 0;
 }
 
-.h5 {
-    color: #ff6600; /* Orange color */
+h5 {
+    color: #2D2621; /* Orange color */
     font-size: 20px; /* Larger font size */
     font-family: 'Arial', sans-serif; /* Font family */
-    text-align: center; /* Center align text */
-    text-shadow: 2px 2px 4px #000000; /* Text shadow for depth */
+    text-align: left; /* Center align text */
+    /*text-shadow: 2px 2px 4px #000000; *//* Text shadow for depth */
     margin: 10px; /* Spacing around the text */
+    background-color: rgb(230, 237, 239); /*  color */
+    padding: 10px; /* Optional: Adds space around the text */
+    text-align: justify;
+    border-radius: 15px;
 }
 
 /* Custom styles for your navbar and page content */
