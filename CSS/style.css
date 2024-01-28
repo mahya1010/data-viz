@@ -1,0 +1,152 @@
+
+.bar {
+    fill: steelblue;
+}
+.bar:hover {
+    fill: orange;
+}
+.axis-label {
+    font-size: 12px;
+}
+
+#tooltip {
+    position: absolute;
+    opacity: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    pointer-events: none;
+    transition: opacity 0.3s;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    font-family: 'Arial', sans-serif;
+}
+.tooltip-title {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.tooltip-content {
+    margin-top: 5px;
+}
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+svg {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+#scatterplot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+circle {
+    fill: blue;
+    opacity: 0.7;
+}
+
+circle:hover {
+    opacity: 1;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-size: 12px;
+}
+
+.legend {
+    font-size: 12px;
+}
+
+.legend rect {
+    stroke: #fff;
+    stroke-width: 1.5px;
+}
+
+.legend text {
+    text-anchor: start;
+    /*dominant-baseline: middle;*/
+}
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+.grid path {
+    stroke-width: 0;
+}
+
+#waffle-chart {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000000; */
+}
+
+.square {
+    width: 30px; /* Size of each square */
+    height: 30px;
+    margin: 1px;
+    display: inline-block;
+    
+}
+
+#heatmap {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 80%;
+    height: auto;
+}
+
+.axis text {
+    font: 12px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+}
+
+.rect {
+    stroke-width: 2;
+    stroke: #E6E6E6;
+}
+
+.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* Custom styles for your navbar and page content */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barchart</title>
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link  href="CSS/style.css" rel="stylesheet" >
+    <script type="module" src="JS/barchart.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">D3.js VisualSization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"></li>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>  
+                <li class="nav-item active">
+                    <a class="nav-link" href="barchart.html">Barc Chart </a>
+                </li>  
+                    
+                <li class="nav-item">
+                    <a class="nav-link" href="linechart.html">Line Chart</a>
+                </li>      
+                <li class="nav-item">
+                    <a class="nav-link" href="scatterplot.html">Scatter Plot</a>
+                </li>       
+                <li class="nav-item">   
+                    <a class="nav-link" href="wafflechart.html">Waffle Chart</a>
+                </li>
+                <li class="nav-item">   
+                    <a class="nav-link" href="heatmap.html">Heat Map</a>
+                </li>
+                <!-- Add more navigation items here -->
+            </ul>
+        </div>
+    </nav>
+    <!-- Add tooltip -->
+    <div id="tooltip"></div>
+
+    <div class="container">
+        <h1>Bar Chart</h1>
+        <h5>
+            The bar chart displays the life expectancy of countries along the Y-axis, with the corresponding life expectancy values on the X-axis. The chart is sorted in descending order of life expectancy, with the longest bars on the left, decreasing to the shortest bar on the right, which is Croatia.
+
+            The consistent blue color of most bars suggests these countries belong to a similar category or group. In contrast, Croatia's bar is colored orange, standing out from the rest, possibly indicating a specific focus or outlier status within the data set.
+
+            The life expectancy values range above 70 years for all represented countries, with the highest values nearing or exceeding 80 years. Croatia, highlighted in orange, has a lower life expectancy of 76.79 years, as revealed by the tooltip, which is still relatively high but noticeably less than the others.
+
+            The relationship between life expectancy and the countries shown suggests that the data set contains relatively high life expectancy figures, with Croatia's value being significant enough to warrant special attention through color differentiation.
+        </h5>
+        <!-- Your content here -->
+        <div id="bar-chart"></div>
+    </div>
+
+    <!-- Load D3.js -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

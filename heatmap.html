@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wafflechart</title>
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link  href="CSS/style.css" rel="stylesheet" >
+    <script type="module" src="JS/heatmap.js"></script>
+    
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Data VisualSization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"></li>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>  
+                <li class="nav-item ">
+                    <a class="nav-link" href="barchart.html">Barc Chart </a>
+                </li>  
+                    
+                <li class="nav-item ">
+                    <a class="nav-link" href="linechart.html">Line Chart</a>
+                </li>      
+                <li class="nav-item ">
+                    <a class="nav-link" href="scatterplot.html">Scatter Plot</a>
+                </li>       
+                <li class="nav-item ">   
+                    <a class="nav-link" href="wafflechart.html">Waffle Chart</a>
+                </li>
+                <li class="nav-item active">   
+                    <a class="nav-link" href="heatmap.html">Heat Map</a>
+                </li>
+                <!-- Add more navigation items here -->
+            </ul>
+        </div>
+    </nav>
+    <!-- Add tooltip -->
+    <div id="tooltip"></div>
+
+    <div class="container">
+        <h1>Heat Map</h1>
+        <h5>
+            The heatmap visualizes the correlation between three variables: Year, Life Expectancy, and Alcohol consumption. The color intensity indicates the strength and direction of the correlation:
+            Blue squares indicate a positive correlation, where variables move in the same direction.
+            Pink squares suggest a negative correlation, where variables move in opposite directions.
+            Analyzing the heatmap:
+            The correlation between Year and Life Expectancy is not shown, but we can assume it is either neutral or positive, given the blueish square.
+            The correlation between Year and Alcohol is likely negative, as the square is pink, but since the color is not intense, the correlation is weak.
+            Life Expectancy and Alcohol consumption have a weak negative correlation, as indicated by the light pink square and confirmed by the tooltip, which shows a correlation coefficient of approximately -0.176.
+        </h5>
+        <!-- Your content here -->
+        <!-- <div id="bar-chart"></div> -->
+        <div id="heat-map"></div>
+
+    </div>
+
+    <!-- Load D3.js -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

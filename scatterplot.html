@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scatterplot</title>
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link  href="CSS/style.css" rel="stylesheet" >
+    <script type="module" src="JS/scatterplot.js"></script>
+    <style>
+        /* Add styling for your scatter plot here */
+        .dot {
+            fill: steelblue;
+            stroke: white;
+        }
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: grey;
+            stroke-width: 1;
+            shape-rendering: crispEdges;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Data VisualSization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"></li>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>  
+                <li class="nav-item ">
+                    <a class="nav-link" href="barchart.html">Barc Chart </a>
+                </li>  
+                    
+                <li class="nav-item ">
+                    <a class="nav-link" href="linechart.html">Line Chart</a>
+                </li>      
+                <li class="nav-item active">
+                    <a class="nav-link" href="scatterplot.html">Scatter Plot</a>
+                </li>       
+                <li class="nav-item">   
+                    <a class="nav-link" href="wafflechart.html">Waffle Chart</a>
+                </li>
+                <li class="nav-item">   
+                    <a class="nav-link" href="heatmap.html">Heat Map</a>
+                </li>
+                <!-- Add more navigation items here -->
+            </ul>
+        </div>
+    </nav>
+    <!-- Add tooltip -->
+    <div id="tooltip"></div>
+
+    <div class="container">
+        <h1>Scatter Plot</h1>
+        <h5>
+            The scatter plot presents a collection of data points, each representing the relationship between total expenditure (likely healthcare expenditure) on the X-axis and life expectancy on the Y-axis. The color coding corresponds to different years, ranging from 2000 to 2015.
+
+            There's a dense cluster of points around the middle range of expenditure, showing a wide variety of life expectancy outcomes. As expenditure increases, life expectancy also generally increases, but the relationship is not strictly linear, and there is considerable variation at each level of expenditure.
+
+            The plot suggests that while higher expenditure is generally associated with higher life expectancy, the correlation is not perfect, and other factors may also play significant roles. The spread of points at higher levels of expenditure indicates that simply spending more does not guarantee a proportionate increase in life expectancy.
+
+            The outliers in the top right corner could represent countries or instances where high expenditure corresponds to very high life expectancy, but these are relatively few compared to the main cluster.
+        </h5>
+        <!-- Your content here -->
+        <!-- <div id="bar-chart"></div> -->
+        <div id="scatter-plot"></div>
+
+    </div>
+
+    <!-- Load D3.js -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

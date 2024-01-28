@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linechart</title>
+    <!-- Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link  href="CSS/style.css" rel="stylesheet" >
+    <script type="module" src="JS/linechart.js"></script>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Data VisualSization</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+        aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"></li>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>  
+                <li class="nav-item ">
+                    <a class="nav-link" href="barchart.html">Barc Chart </a>
+                </li>  
+                    
+                <li class="nav-item active">
+                    <a class="nav-link" href="linechart.html">Line Chart</a>
+                </li>      
+                <li class="nav-item">
+                    <a class="nav-link" href="scatterplot.html">Scatter Plot</a>
+                </li>       
+                <li class="nav-item">   
+                    <a class="nav-link" href="wafflechart.html">Waffle Chart</a>
+                </li>
+                <li class="nav-item">   
+                    <a class="nav-link" href="heatmap.html">Heat Map</a>
+                </li>
+                <!-- Add more navigation items here -->
+            </ul>
+        </div>
+    </nav>
+    <!-- Add tooltip -->
+    <div id="tooltip"></div>
+
+    <div class="container">
+        <h1>Line Chart</h1>
+        <h5>
+            The line chart presents the trend of life expectancy over a series of years. The X-axis is labeled as "Year", and the Y-axis represents "Life Expectancy" in years, although there's a textual mistake in your message mentioning that both axes represent the year.
+
+            The line is mostly horizontal, indicating that the life expectancy has remained relatively stable over the years depicted. Each data point is marked with a blue dot, and the line connecting these points is flat, which suggests there's been little change in life expectancy during the time frame shown.
+
+            The tooltip for the final data point indicates a life expectancy of 71.4 years in 2015. Assuming the data points are evenly spaced, they likely represent annual measurements. The consistency in life expectancy values could imply that there have been no significant changes in factors that typically influence these metrics, such as healthcare, living conditions, or significant health crises.
+        </h5>
+        <!-- Your content here -->
+        <!-- <div id="bar-chart"></div> -->
+        <div id="line-chart"></div>
+
+    </div>
+
+    <!-- Load D3.js -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
